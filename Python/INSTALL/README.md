@@ -8,10 +8,10 @@ The purpose of this tutorial is not about installing a complicated cross-platfor
 
 Before continuing, **please install WSL** following these instructions (also detailed here : [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10 "https://docs.microsoft.com/en-us/windows/wsl/install-win10"))
 
-- **[[Show Video](https://gfycat.com/WholeSmartAttwatersprairiechicken "Show Video")]** Open a Powerwhell as **Administrator** type the following command and reboot :
+- Open a Powerwhell as **Administrator** type the following command and reboot :
 
     `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux` 
-- **[[Show Video](https://gfycat.com/CircularFearlessHylaeosaurus "Show Video")]** Open the **Windows Store**, and chose your favorite Linux distribution - I prefer **Debian**. Once installed, chose any username / password your want.
+- Open the **Windows Store**, and chose your favorite Linux distribution - I prefer **Debian**. Once installed, chose any username / password your want.
 
 Once it is done, you can follow the Linux installation instructions below.
 
@@ -26,8 +26,6 @@ Indeed, these packages are still in testing in most Linux distributions.
 As this tutorial needs to be as generic as possible, we're going to **compile the latest Python version** from source :
 
 #### 1 ▶ Compile Python 3.7
-
-**[[Show Video](https://gfycat.com/SlimThreadbareInsect "Show Video")]**
 
 ```bash
 # Make sure we're updated
@@ -47,9 +45,6 @@ $ sudo rm -rf /tmp/Python-3.7.0 && cd /tmp
 
 Once your Python environment is installed, run the following command to check your python installation was successful :
 
-**[[Show Video](https://gfycat.com/GoodRadiantAmurminnow "Show Video")]**
-**[[Show Video](https://gfycat.com/AmpleHeftyDrever "Show Video")]**
-
 ```bash
 $ python3.7 # Type Ctrl+D for exiting
 $ pip3.7
@@ -62,7 +57,6 @@ $ sudo pip3.7 install --upgrade pip
 We are now ready to install the `iconsdk` package.
 Let's grab the latest version on Github :
 
-**[[Show Video](https://gfycat.com/ComplicatedFloweryBlueandgoldmackaw "Show Video")]**
 ```bash
 $ sudo apt install git && git clone https://github.com/icon-project/icon_sdk_for_python.git
 $ cd icon_sdk_for_python
@@ -70,7 +64,6 @@ $ cd icon_sdk_for_python
 
 And we can finally install it (it will take few minutes) :
 
-**[[Show Video](https://gfycat.com/ThunderousNeighboringLabradorretriever "Show Video")]**
 ```bash
 $ sudo python3.7 setup.py install
 ```
@@ -80,7 +73,6 @@ $ sudo python3.7 setup.py install
 You did it ! Now let's do some testing in order to check that everything is working well.
 We're going to test the "get_balance" function, and get the balance of the address **`hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e`** on the ICON **testnet**.
 
-**[[Show Video](https://gfycat.com/HonestBareFlyingsquirrel "Show Video")]**
 ```bash
 $ python3.7
 Python 3.7.0 (default, Aug 18 2018, 22:42:36)
