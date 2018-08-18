@@ -25,7 +25,7 @@ At the time of writing this tutorial, you may notice that if you type in your co
 Indeed, these packages are still in testing in most Linux distributions. 
 As this tutorial needs to be as generic as possible, we're going to **compile the latest Python version** from source :
 
-#### Compile Python 3.7
+#### 1 ▶ Compile Python 3.7
 
 **[[Show Video](https://gfycat.com/SlimThreadbareInsect "Show Video")]**
 
@@ -57,7 +57,7 @@ $ pip3.7
 $ sudo pip3.7 install --upgrade pip
 ```
 
-#### Download and install ICON SDK Python
+#### 2 ▶ Download and install ICON SDK Python
 
 We are now ready to install the `iconsdk` package.
 Let's grab the latest version on Github :
@@ -75,7 +75,7 @@ And we can finally install it (it will take few minutes) :
 $ sudo python3.7 setup.py install
 ```
 
-#### Optional testing
+#### 3 ▶ Optional testing
 
 You did it ! Now let's do some testing to check everything is working well.
 We're going to use the "get_balance" utils function, and get the balance of the address **`hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e`** on the **testnet**.
