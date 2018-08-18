@@ -8,7 +8,7 @@ The purpose of this tutorial is not about installing a complicated cross-platfor
 
 Before continuing, **please install WSL** following these instructions (also detailed here : [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10 "https://docs.microsoft.com/en-us/windows/wsl/install-win10"))
 
-- **[[Show Video](https://gfycat.com/WholeSmartAttwatersprairiechicken "Show Video")]** Open a Powerwhell as **Administrator** type the following command and reboot :
+- **[[Show Video](https://gfycat.com/WholeSmartAttwatersprairiechicken "Show Video")]** Open a Powerwhell as **Administrator** type the following command and **reboot** :
 
     `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux` 
 - **[[Show Video](https://gfycat.com/CircularFearlessHylaeosaurus "Show Video")]** Open the **Windows Store**, and chose your favorite Linux distribution - I prefer **Debian**. Once installed, chose any username / password you want.
