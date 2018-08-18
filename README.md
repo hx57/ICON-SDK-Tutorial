@@ -6,12 +6,12 @@ Please go to the section of your choice :
 
 #### ICON SDK Python 
 - [Installation](Python/INSTALL "Installation")
-- [Usage](Python/USAGE "Usage")
+- Usage
 
 #### ICON SDK Java 
 - Installation
-- Tutorial
+- Usage
 
 #### ICON SDK Swift 
 - Installation
-- Tutorial
+- Usage
