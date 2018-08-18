@@ -77,8 +77,8 @@ $ sudo python3.7 setup.py install
 
 #### 3 ▶ Optional testing
 
-You did it ! Now let's do some testing to check everything is working well.
-We're going to use the "get_balance" utils function, and get the balance of the address **`hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e`** on the **testnet**.
+You did it ! Now let's do some testing in order to check that everything is working well.
+We're going to test the "get_balance" function, and get the balance of the address **`hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e`** on the ICON **testnet**.
 
 **[[Show Video](https://gfycat.com/HonestBareFlyingsquirrel "Show Video")]**
 ```bash
