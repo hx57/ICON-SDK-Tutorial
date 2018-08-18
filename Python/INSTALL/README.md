@@ -6,7 +6,7 @@ In order to install the Python `iconsdk` package on Windows, we need the appropr
 
 The purpose of this tutorial is not about installing a complicated cross-platform compilation environment. Fortunately, Microsoft has developed **WSL**, that allows us to run the Linux development tools directly on **Windows 10**.
 
-Before continuing, **please install WSL** following these instructions (also detailed here : [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10 "https://docs.microsoft.com/en-us/windows/wsl/install-win10"))
+Before continuing, **please install WSL** following these instructions :
 
 - **[[Show Video](https://gfycat.com/WholeSmartAttwatersprairiechicken "Show Video")]** Open a Powerwhell as **Administrator** type the following command and **reboot** :
 
