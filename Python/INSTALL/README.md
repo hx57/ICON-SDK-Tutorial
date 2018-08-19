@@ -45,6 +45,9 @@ $ sudo rm -rf /tmp/Python-3.7.0 && cd /tmp
 
 Once your Python environment is installed, run the following command to check your python installation was successful :
 
+**[[Show Video](https://gfycat.com/GoodRadiantAmurminnow "Show Video")]**
+**[[Show Video](https://gfycat.com/AmpleHeftyDrever "Show Video")]**
+
 ```bash
 $ python3.7 # Type Ctrl+D for exiting
 $ pip3.7
