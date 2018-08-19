@@ -2,7 +2,7 @@
 
 - ⏰ *Approximative completion time :  5 minutes*
 
-In order to install the Python `iconsdk` package on Windows, we need the appropriate development environment for doing so. Unfortunately, the `iconsdk` package has a dependency with `secp256k1`, which is quite hard to compile on Windows OS, as it hasn't been ported to Windows development environment and [nobody has fixed it yet](https://github.com/ludbb/secp256k1-py/issues/28 "nobody has fixed it yet").
+In order to install the Python `iconsdk` package on Windows, we need the appropriate development environment for doing so. Unfortunately, the `iconsdk` package has a dependency with `secp256k1`, which is quite hard to compile on Windows OS, as it hasn't been ported to Windows development environment.
 
 The purpose of this tutorial is not about installing a complicated cross-platform compilation environment. Fortunately, Microsoft has developed **WSL**, that allows us to run the Linux development tools directly on **Windows 10**.
 
