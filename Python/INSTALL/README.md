@@ -21,11 +21,11 @@ Once it is done, you can follow the Linux installation instructions below.
 
 The `iconsdk` Python package currently requires a Python version >= 3.6.
 
-At the time of writing this tutorial, you may notice that if you type in your console `sudo apt search python3.6`, you will have no result. The same goes for `python3.7` package.
+At the time of writing this tutorial, you may notice that if you type in your console `sudo apt search python3.6`, you will have no result.
 Indeed, these packages are still in testing in most Linux distributions. 
-As this tutorial needs to be as generic as possible, we're going to **compile the latest Python version** from source :
+As this tutorial needs to be as generic as possible, we're going to **compile the latest Python 3.6 version** from source :
 
-#### 1 ▶ Compile Python 3.7
+#### 1 ▶ Compile Python 3.6
 
 ```bash
 # Make sure we're updated
@@ -34,13 +34,13 @@ $ sudo apt update && sudo apt upgrade
 $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev  libncursesw5-dev xz-utils tk-dev autoconf libtool libsecp256k1-dev
 # Download and extract Python
 $ cd /tmp
-$ wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz --no-check-certificate
-$ tar xvf Python-3.7.0.tgz && cd Python-3.7.0
-# Compile Python 3.7
+$ wget https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz --no-check-certificate
+$ tar xvf Python-3.6.6.tgz && cd Python-3.6.6
+# Compile Python 3.6.6
 $ ./configure --enable-optimizations --with-ensurepip=install
 $ make -j8 build_all && sudo make -j8 install
 # Cleanup
-$ sudo rm -rf /tmp/Python-3.7.0 && cd /tmp
+$ sudo rm -rf /tmp/Python-3.6.6 && cd /tmp
 ```
 
 Once your Python environment is installed, run the following command to check your python installation was successful :
@@ -49,10 +49,10 @@ Once your Python environment is installed, run the following command to check yo
 **[[Show Video](https://gfycat.com/AmpleHeftyDrever "Show Video")]**
 
 ```bash
-$ python3.7 # Type Ctrl+D for exiting
-$ pip3.7
+$ python3.6 # Type Ctrl+D for exiting
+$ pip3.6
 # Make sure we're using the latest pip version
-$ sudo pip3.7 install --upgrade pip
+$ sudo pip3.6 install --upgrade pip
 ```
 
 #### 2 ▶ Download and install ICON SDK Python
@@ -68,7 +68,7 @@ $ cd icon_sdk_for_python
 And we can finally install it (it will take few minutes) :
 
 ```bash
-$ sudo python3.7 setup.py install
+$ sudo python3.6 setup.py install
 ```
 
 #### 3 ▶ Optional testing
@@ -77,10 +77,7 @@ You did it ! Now let's do some testing in order to check that everything is work
 We're going to test the "get_balance" function, and get the balance of the address **`hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e`** on the ICON **testnet**.
 
 ```bash
-$ python3.7
-Python 3.7.0 (default, Aug 18 2018, 22:42:36)
-[GCC 6.3.0 20170516] on linux
-Type "help", "copyright", "credits" or "license" for more information.
+$ python3.6
 >>> import icx.utils
 >>> icx.utils.get_balance("hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e", "https://testwallet.icon.foundation/api/")
 100000000000000000000000000
