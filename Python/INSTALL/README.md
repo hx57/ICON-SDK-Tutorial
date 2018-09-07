@@ -58,35 +58,32 @@ $ sudo pip3.6 install --upgrade pip
 #### 2 ▶ Download and install ICON SDK Python
 
 We are now ready to install the `iconsdk` package.
-Let's grab the latest version on Github :
+Let's grab the latest version (it may takes few minutes) :
 
 ```bash
-$ sudo apt install git && git clone https://github.com/icon-project/icon_sdk_for_python.git
-$ cd icon_sdk_for_python
-```
-
-And we can finally install it (it will take few minutes) :
-
-```bash
-$ sudo python3.6 setup.py install
+$ sudo pip3.6 install iconsdk
 ```
 
 #### 3 ▶ Optional testing
 
 You did it ! Now let's do some testing in order to check that everything is working well.
-We're going to test the "get_balance" function, and get the balance of the address **`hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e`** on the ICON **testnet**.
+We're going to test the `get_block` function, and get the latest block generated on the ICON **testnet** V3.
+Please note that I used an unofficial API V3 provider `http://13.209.103.183:9000/api/v3`, as there is no official one yet.
 
 ```bash
-$ python3.6
->>> import icx.utils
->>> icx.utils.get_balance("hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e", "https://testwallet.icon.foundation/api/")
-100000000000000000000000000
+from iconsdk.icon_service import IconService
+from iconsdk.providers.http_provider import HTTPProvider
+
+# Creates an IconService instance using the HTTP provider and set a provider.
+icon_service = IconService(HTTPProvider("http://13.209.103.183:9000/api/v3"))
+
+# Gets the latest block
+block = icon_service.get_block("latest")
+print(block)
 ```
 
-`100000000000000000000000000`is the amount of "loops" (1 loop = 10^-18 ICX), so converted to ICX, the balance of the address `hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e` is 100,000,000 ICX.
-
-According to the [testnet tracker](https://trackerdev.icon.foundation/address/hxe0ce109f237ef5265f3fc548e5d5ea50ed0fa93e "testnet tracker"), it is correct.
-
-![A lot of ICX!](https://i.imgur.com/4Ds0apv.png "A lot of ICX!")
-
+At the time of writing this tutorial, this script returns me the following block, but you should observe another result.
+```
+{'version': '0.1a', 'prev_block_hash': '25457b45f6d77764e09dc1097a7b67fba61931835c44926e86124047cce1a70c', 'merkle_tree_root_hash': 'e043bad8f14b04b247b7ee6286fc7551bf164c37612fada6d5a8f258e1871d82', 'time_stamp': 1536321057283295, 'confirmed_transaction_list': [{'from': 'hx23ada4a4b444acf8706a6f50bbc9149be1781e13', 'to': 'hx04d669879227bb24fc32312c408b0d5503362ef0', 'value': '0xa968163f0a57b400000', 'version': '0x3', 'nid': '0x3', 'stepLimit': '0xf4240', 'timestamp': '0x575469eda6a60', 'signature': 'mxXaOEBUFOhpQAs/SNWjV/UZpJufoUZ+8r4kWv7gEtAwynaVrS7e9cBazoyF+tm038XMgcZDx+t+1mo8Zx63/gA=', 'txHash': '0xe043bad8f14b04b247b7ee6286fc7551bf164c37612fada6d5a8f258e1871d82'}], 'block_hash': 'f9c90a4cceaf1ff294c8e389ffaf962960e07cb85b017f155424279f49909d7f', 'height': 5, 'peer_id': 'hx86aba2210918a9b116973f3c4b27c41a54d5dafe', 'signature': 'a+4Oh6Bh3dGYuhY5NesW8Fb9qLdLpnmA0xiEs28BWT97krt2gCyOZ4Yk5BvOYrqTRkV0WgasRoJi0fIVQsYmmAE='}
+```
 
