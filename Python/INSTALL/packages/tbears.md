@@ -1,4 +1,4 @@
-# ICON Python SDK Installation
+# ICON T-Bears Installation
 
 ⏰ *Approximative completion time : 10 minutes*
 
