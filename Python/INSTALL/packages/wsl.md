@@ -13,4 +13,4 @@ Before continuing, **please install WSL** following these instructions :
     `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux` 
 - **[[Show Video](https://gfycat.com/CircularFearlessHylaeosaurus "Show Video")]** Open the **Windows Store**, and chose your favorite Linux distribution - I prefer **Debian**. Once installed, chose any username / password you want.
 
-Once it is done, you can follow the Linux installation instructions.
+Once it is done, you should be able to use your WSL installation as a Linux installation.
