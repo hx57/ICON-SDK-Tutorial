@@ -1,6 +1,7 @@
 # ICON Python SDK Installation
 
 ⏰ *Approximative completion time : 10 minutes*
+
 ⚠ *You should have installed the `iconsdk` already, if not, [please do](iconsdk.md)*
 
 #### 1 ▶ Install ICON T-Bears dependencies
@@ -67,6 +68,37 @@ print(block)
 
 This script should return a similar result for you if everything went well :
 ```json
-{'version': 'tbears', 'prev_block_hash': '', 'merkle_tree_root_hash': 'tbears_block_manager_does_not_support_block_merkle_tree', 'time_stamp': 1536517839613220, 'confirmed_transaction_list': [{'nid': '0x3', 'accounts': [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]}], 'block_hash': '66ec73e1f7031b05506f56d35cb19dd1c17a0f09a921e223acb787ec9bac0d84', 'height': 0, 'peer_id': '', 'signature': ''}
+{
+    "version": "tbears",
+    "prev_block_hash": "",
+    "merkle_tree_root_hash": "tbears_block_manager_does_not_support_block_merkle_tree",
+    "time_stamp": 1536517839613220,
+    "confirmed_transaction_list": [
+        {
+            "nid": "0x3",
+            "accounts": [
+                {
+                    "name": "genesis",
+                    "address": "hx0000000000000000000000000000000000000000",
+                    "balance": "0x2961fff8ca4a62327800000"
+                },
+                {
+                    "name": "fee_treasury",
+                    "address": "hx1000000000000000000000000000000000000000",
+                    "balance": "0x0"
+                },
+                {
+                    "name": "test1",
+                    "address": "hxe7af5fcfd8dfc67530a01a0e403882687528dfcb",
+                    "balance": "0x2961fff8ca4a62327800000"
+                }
+            ]
+        }
+    ],
+    "block_hash": "66ec73e1f7031b05506f56d35cb19dd1c17a0f09a921e223acb787ec9bac0d84",
+    "height": 0,
+    "peer_id": "",
+    "signature": ""
+}
 ```
 
