@@ -50,15 +50,14 @@ $ sudo pip3.6 install iconsdk
 #### 3 ▶ Optional testing
 
 You did it ! Now let's do some testing in order to check that everything is working well.
-We're going to test the `get_block` function, and get the latest block generated on the ICON **testnet** V3.
-Please note that I used an unofficial API V3 provider `http://13.209.103.183:9000/api/v3`, as there is no official one yet.
+We're going to test the `get_block` function, and get the latest block generated on the ICON **devnet** V3.
 
 ```bash
 from iconsdk.icon_service import IconService
 from iconsdk.providers.http_provider import HTTPProvider
 
 # Creates an IconService instance using the HTTP provider and set a provider.
-icon_service = IconService(HTTPProvider("http://13.209.103.183:9000/api/v3"))
+icon_service = IconService(HTTPProvider("https://bicon.net.solidwallet.io/api/v3"))
 
 # Gets the latest block
 block = icon_service.get_block("latest")
