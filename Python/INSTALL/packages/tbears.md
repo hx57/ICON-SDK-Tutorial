@@ -7,7 +7,7 @@
 #### 1 ▶ Install ICON T-Bears dependencies
 
 ```bash
-$ sudo apt install autoconf automake libtool pkg-config
+$ sudo apt install autoconf automake libtool pkg-config lsof
 ```
 
 Then, we need to install and launch the RabbitMQ server :
