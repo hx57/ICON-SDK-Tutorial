@@ -65,7 +65,29 @@ print(block)
 ```
 
 At the time of writing this tutorial, this script returns me the following block, but you should observe another result.
-```
-{'version': '0.1a', 'prev_block_hash': '25457b45f6d77764e09dc1097a7b67fba61931835c44926e86124047cce1a70c', 'merkle_tree_root_hash': 'e043bad8f14b04b247b7ee6286fc7551bf164c37612fada6d5a8f258e1871d82', 'time_stamp': 1536321057283295, 'confirmed_transaction_list': [{'from': 'hx23ada4a4b444acf8706a6f50bbc9149be1781e13', 'to': 'hx04d669879227bb24fc32312c408b0d5503362ef0', 'value': '0xa968163f0a57b400000', 'version': '0x3', 'nid': '0x3', 'stepLimit': '0xf4240', 'timestamp': '0x575469eda6a60', 'signature': 'mxXaOEBUFOhpQAs/SNWjV/UZpJufoUZ+8r4kWv7gEtAwynaVrS7e9cBazoyF+tm038XMgcZDx+t+1mo8Zx63/gA=', 'txHash': '0xe043bad8f14b04b247b7ee6286fc7551bf164c37612fada6d5a8f258e1871d82'}], 'block_hash': 'f9c90a4cceaf1ff294c8e389ffaf962960e07cb85b017f155424279f49909d7f', 'height': 5, 'peer_id': 'hx86aba2210918a9b116973f3c4b27c41a54d5dafe', 'signature': 'a+4Oh6Bh3dGYuhY5NesW8Fb9qLdLpnmA0xiEs28BWT97krt2gCyOZ4Yk5BvOYrqTRkV0WgasRoJi0fIVQsYmmAE='}
+```json
+{
+    "version": "0.1a",
+    "prev_block_hash": "25457b45f6d77764e09dc1097a7b67fba61931835c44926e86124047cce1a70c",
+    "merkle_tree_root_hash": "e043bad8f14b04b247b7ee6286fc7551bf164c37612fada6d5a8f258e1871d82",
+    "time_stamp": 1536321057283295,
+    "confirmed_transaction_list": [
+        {
+            "from": "hx23ada4a4b444acf8706a6f50bbc9149be1781e13",
+            "to": "hx04d669879227bb24fc32312c408b0d5503362ef0",
+            "value": "0xa968163f0a57b400000",
+            "version": "0x3",
+            "nid": "0x3",
+            "stepLimit": "0xf4240",
+            "timestamp": "0x575469eda6a60",
+            "signature": "mxXaOEBUFOhpQAs/SNWjV/UZpJufoUZ+8r4kWv7gEtAwynaVrS7e9cBazoyF+tm038XMgcZDx+t+1mo8Zx63/gA=",
+            "txHash": "0xe043bad8f14b04b247b7ee6286fc7551bf164c37612fada6d5a8f258e1871d82"
+        }
+    ],
+    "block_hash": "f9c90a4cceaf1ff294c8e389ffaf962960e07cb85b017f155424279f49909d7f",
+    "height": 5,
+    "peer_id": "hx86aba2210918a9b116973f3c4b27c41a54d5dafe",
+    "signature": "a+4Oh6Bh3dGYuhY5NesW8Fb9qLdLpnmA0xiEs28BWT97krt2gCyOZ4Yk5BvOYrqTRkV0WgasRoJi0fIVQsYmmAE="
+}
 ```
 
