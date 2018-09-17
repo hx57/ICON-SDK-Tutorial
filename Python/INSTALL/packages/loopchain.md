@@ -11,7 +11,7 @@ You should have installed it already, if not, [please follow the ICON SDK Instal
 We're going to need the following dependencies in order to install loopchain (yes, that is a lot) :
 
 ```bash
-$ sudo apt install -y git build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev autoconf libtool libsecp256k1-dev autoconf automake libtool pkg-config libleveldb1v5 libleveldb-dev openssl lsof virtualenv
+$ sudo apt install -y git build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev autoconf libtool libsecp256k1-dev autoconf automake libtool pkg-config libleveldb1v5 libleveldb-dev openssl lsof
 ```
 
 #### 2 ▶ Install RabbitMQ Server
@@ -42,6 +42,7 @@ We need to install and launch the RabbitMQ server :
 #### 3 ▶ Install loopchain
 
 ```bash
+$ sudo pip3.6 install virtualenv
 $ git clone https://github.com/icon-project/loopchain.git
 $ cd loopchain/
 $ virtualenv -p python3 ./venv
