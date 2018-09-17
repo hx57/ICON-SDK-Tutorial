@@ -4,7 +4,7 @@
 
 `loopchain` package currently requires a Python version >= 3.6.
 
-You should have installed it already, if not, [please follow the ICON SDK Installation Tutorial](packages/iconsdk.md).
+You should have installed it already, if not, [please follow the ICON SDK Installation Tutorial](iconsdk.md).
 
 #### 1 ▶ Install packages dependencies
 
