@@ -44,13 +44,13 @@ We need to install and launch the RabbitMQ server :
 ```bash
 $ git clone https://github.com/icon-project/loopchain.git
 $ cd loopchain/
-$ python3 -m grpc.tools.protoc -I'./protos' --python_out='./protos' --grpc_python_out='./protos' './protos/loopchain.proto'
 $ virtualenv -p python3 ./venv
 $ source ./venv/bin/activate
 $ pip3 install git+https://github.com/icon-project/icon-service.git
 $ pip3 install git+https://github.com/icon-project/icon-commons.git
 $ pip3 install git+https://github.com/icon-project/icon-rpc-server.git
 $ pip3 install -r requirements.txt
+$ python3 -m grpc.tools.protoc -I'./protos' --python_out='./protos' --grpc_python_out='./protos' './protos/loopchain.proto'
 ```
 
 #### 4 ▶ Run loopchain
