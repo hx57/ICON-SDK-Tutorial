@@ -53,6 +53,7 @@ $ pip3 install git+https://github.com/icon-project/icon-rpc-server.git
 $ pip3 install -r requirements.txt
 $ cd loopchain/
 $ python3 -m grpc.tools.protoc -I'./protos' --python_out='./protos' --grpc_python_out='./protos' './protos/loopchain.proto'
+$ cd ../
 ```
 
 #### 4 ▶ Run loopchain
