@@ -1,4 +1,7 @@
-These tutorials will guide you through the process to install a complete **ICON SDK** on your computer.
+# ![ICON](https://i.imgur.com/UAVkjVU.png) | Dev Tutorials
+---
+
+These tutorials will guide you through the process to install a complete **ICON Development Suite** on your computer.
 
 It is adviced to follow the tutorials in the following order:
 
