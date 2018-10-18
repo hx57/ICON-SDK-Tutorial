@@ -1,6 +1,7 @@
-# ICON SDK Tutorial
+# ![ICON](https://i.imgur.com/UAVkjVU.png) | Dev Tutorials
+---
 
-Welcome to the ICON SDK Tutorial !
+Welcome to the ICON Development Suite Tutorials !
 
 Please go to the section of your choice :
 
