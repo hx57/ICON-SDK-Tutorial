@@ -51,9 +51,7 @@ $ pip3 install git+https://github.com/icon-project/icon-service.git
 $ pip3 install git+https://github.com/icon-project/icon-commons.git
 $ pip3 install git+https://github.com/icon-project/icon-rpc-server.git
 $ pip3 install -r requirements.txt
-$ cd loopchain/
-$ python3 -m grpc.tools.protoc -I'./protos' --python_out='./protos' --grpc_python_out='./protos' './protos/loopchain.proto'
-$ cd ../
+$ ./generate_code.sh
 ```
 
 #### 4 ▶ Run loopchain
@@ -65,7 +63,7 @@ $ mkdir -p resources/my_pki
 $ cd resources/my_pki
 $ openssl ecparam -genkey -name secp256k1 | openssl ec -aes-256-cbc -out my_private.pem
 $ openssl ec -in my_private.pem  -pubout -out my_public.pem
-$ export PW_icon_dex={ENTER_MY_PASSWORD}
+$ export PW_icon_dex=ENTER_MY_PASSWORD
 $ cd -
 ```
 
