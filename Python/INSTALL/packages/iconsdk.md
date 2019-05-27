@@ -2,13 +2,13 @@
 
 - ⏰ *Approximative completion time : 15 minutes*
 
-The `iconsdk` Python package currently requires a Python version >= 3.6.
+The `iconsdk` Python package currently requires a Python version >= 3.7.
 
-At the time of writing this tutorial, you may notice that if you type in your console `sudo apt search python3.6`, you will have no result.
+At the time of writing this tutorial, you may notice that if you type in your console `sudo apt search python3.7`, you will have no result.
 Indeed, these packages are still in testing in most Linux distributions. 
-As this tutorial needs to be as generic as possible, we're going to **compile the latest Python 3.6 version** from source :
+As this tutorial needs to be as generic as possible, we're going to **compile the latest Python 3.7 version** from source :
 
-#### 1 ▶ Compile Python 3.6
+#### 1 ▶ Compile Python 3.7.3
 
 ```bash
 # Make sure we're updated
@@ -17,13 +17,13 @@ $ sudo apt update && sudo apt upgrade
 $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev  libncursesw5-dev xz-utils tk-dev autoconf libtool libsecp256k1-dev
 # Download and extract Python
 $ cd /tmp
-$ wget https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz --no-check-certificate
-$ tar xvf Python-3.6.6.tgz && cd Python-3.6.6
-# Compile Python 3.6.6
+$ wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz --no-check-certificate
+$ tar xvf Python-3.7.3.tgz && cd Python-3.7.3
+# Compile Python 3.7.3
 $ ./configure --enable-optimizations --with-ensurepip=install
-$ make -j8 build_all && sudo make -j8 install
+$ make -j8 build_all && sudo make -j8 altinstall
 # Cleanup
-$ sudo rm -rf /tmp/Python-3.6.6 && cd /tmp
+$ sudo rm -rf /tmp/Python-3.7.3 && cd /tmp
 ```
 
 Once your Python environment is installed, run the following command to check your python installation was successful :
@@ -32,10 +32,10 @@ Once your Python environment is installed, run the following command to check yo
 **[[Show Video](https://gfycat.com/AmpleHeftyDrever "Show Video")]**
 
 ```bash
-$ python3.6 # Type Ctrl+D for exiting
-$ pip3.6
+$ python3.7 # Type Ctrl+D for exiting
+$ pip3.7
 # Make sure we're using the latest pip version
-$ sudo pip3.6 install --upgrade pip
+$ sudo pip3.7 install --upgrade pip
 ```
 
 #### 2 ▶ Download and install ICON SDK Python
@@ -44,7 +44,7 @@ We are now ready to install the `iconsdk` package.
 Let's grab the latest version (it may takes few minutes) :
 
 ```bash
-$ sudo pip3.6 install iconsdk
+$ sudo pip3.7 install iconsdk
 ```
 
 #### 3 ▶ Optional testing
