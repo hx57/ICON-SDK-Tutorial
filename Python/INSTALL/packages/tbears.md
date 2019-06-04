@@ -39,7 +39,7 @@ Then, we need to install and launch the RabbitMQ server :
 Once the RabbitMQ server is launched and listening, we can grab and install the latest `tbears` version :
 
 ```bash
-$ sudo pip3.6 install tbears
+$ sudo pip3.7 install tbears
 ```
 
 Now we can start the `tbears` service :
