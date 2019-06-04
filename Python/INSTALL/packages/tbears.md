@@ -59,7 +59,7 @@ from iconsdk.icon_service import IconService
 from iconsdk.providers.http_provider import HTTPProvider
 
 # Creates an IconService instance using tbears
-icon_service = IconService(HTTPProvider("http://localhost:9000/api/v3"))
+icon_service = IconService(HTTPProvider("http://localhost:9000/", 3))
 
 # Gets the latest block
 block = icon_service.get_block("latest")
