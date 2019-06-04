@@ -57,7 +57,7 @@ from iconsdk.icon_service import IconService
 from iconsdk.providers.http_provider import HTTPProvider
 
 # Creates an IconService instance using the HTTP provider and set a provider.
-icon_service = IconService(HTTPProvider("https://bicon.net.solidwallet.io/api/v3"))
+icon_service = IconService(HTTPProvider("https://bicon.net.solidwallet.io/", 3))
 
 # Gets the latest block
 block = icon_service.get_block("latest")
