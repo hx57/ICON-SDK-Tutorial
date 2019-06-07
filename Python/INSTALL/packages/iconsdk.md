@@ -44,7 +44,17 @@ We are now ready to install the `iconsdk` package.
 Let's grab the latest version (it may takes few minutes) :
 
 ```bash
-$ sudo pip3.7 install iconsdk
+# Install virtualenv
+$ sudo pip3.7 install virtualenv
+
+# Make the virtual environment using a Python 3.7 version in a folder called "venv"
+$ virtualenv -p python3.7 venv
+
+# Activate the newly created environment
+$ source venv/bin/activate 
+
+# Install ICON SDK
+$ pip install iconsdk
 ```
 
 #### 3 ▶ Optional testing
