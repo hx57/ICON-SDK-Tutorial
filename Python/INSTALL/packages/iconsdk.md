@@ -8,7 +8,7 @@ At the time of writing this tutorial, you may notice that if you type in your co
 Indeed, these packages are still in testing in most Linux distributions. 
 As this tutorial needs to be as generic as possible, we're going to **compile the latest Python 3.7 version** from source :
 
-#### 1 ▶ Compile Python 3.7.3
+#### 1 ▶ Compile Python 3.7
 
 ```bash
 # Make sure we're updated
@@ -17,13 +17,13 @@ $ sudo apt update && sudo apt upgrade
 $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev  libncursesw5-dev xz-utils tk-dev autoconf libtool libsecp256k1-dev
 # Download and extract Python
 $ cd /tmp
-$ wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz --no-check-certificate
-$ tar xvf Python-3.7.3.tgz && cd Python-3.7.3
-# Compile Python 3.7.3
+$ wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz --no-check-certificate
+$ tar xvf Python-3.7.4.tgz && cd Python-3.7.4
+# Compile Python 3.7.4
 $ ./configure --enable-optimizations --with-ensurepip=install
 $ make -j8 build_all && sudo make -j8 altinstall
 # Cleanup
-$ sudo rm -rf /tmp/Python-3.7.3 && cd /tmp
+$ sudo rm -rf /tmp/Python-3.7.4 && cd /tmp
 ```
 
 Once your Python environment is installed, run the following command to check your python installation was successful :
