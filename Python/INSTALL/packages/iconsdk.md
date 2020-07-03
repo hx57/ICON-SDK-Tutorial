@@ -4,9 +4,9 @@
 
 The `iconsdk` Python package currently requires a Python version >= 3.7.
 
-At the time of writing this tutorial, you may notice that if you type in your console `sudo apt search python3.7`, you will have no result.
+At the time of writing this tutorial, you may notice that if you type in your console `sudo apt search python3.8`, you will have no result.
 Indeed, these packages are still in testing in most Linux distributions. 
-As this tutorial needs to be as generic as possible, we're going to **compile the latest Python 3.7 version** from source :
+As this tutorial needs to be as generic as possible, we're going to **compile the latest Python 3.8 version** from source :
 
 #### 1 ▶ Compile Python 3.8
 
