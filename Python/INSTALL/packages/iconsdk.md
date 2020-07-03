@@ -8,7 +8,7 @@ At the time of writing this tutorial, you may notice that if you type in your co
 Indeed, these packages are still in testing in most Linux distributions. 
 As this tutorial needs to be as generic as possible, we're going to **compile the latest Python 3.7 version** from source :
 
-#### 1 ▶ Compile Python 3.7
+#### 1 ▶ Compile Python 3.8
 
 ```bash
 # Make sure we're updated
